@@ -13,7 +13,6 @@ export default {
           id: 1,
           msg: 'ABOUT ME',
           link: '',
-          color: '#adadad'
         },
         {
           id: 2,
@@ -25,13 +24,11 @@ export default {
           id: 3,
           msg: 'GITHUB',
           link: 'https://github.com/rodrigocitadin',
-          color: '#6d2a89'
         },
         {
           id: 4,
           msg: 'DEV.TO',
           link: 'https://dev.to/rodrigocitadin',
-          color: '#3ec9b4'
         }
       ]
     }
