@@ -4,7 +4,7 @@
       <img src="../assets/my-picture.png" alt="Citadin's picture" id="citadin-pic">
     </div>
     <div class="my-name">
-      <h1>Citadin</h1>
+      <h1 class="name animation-typing">Citadin</h1>
     </div>
   </header>
 </template>
@@ -33,5 +33,36 @@ export default {
   margin-bottom: 120px;
   display: flex;
   justify-content: center;
+}
+
+.name {
+  width: 140px;
+  border-right: 3px solid whitesmoke;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.animation-typing {
+  animation: blinkCursor 1s infinite normal, typing 1s steps(7) 0s normal;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 140px;
+  }
+}
+
+@keyframes blinkCursor {
+  0% {
+    border-right-color: whitesmoke;
+  }
+
+  50% {
+    border-right-color: transparent;
+  }
 }
 </style>
