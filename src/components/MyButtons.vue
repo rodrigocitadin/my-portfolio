@@ -1,6 +1,6 @@
 <template>
-  <button class="button" v-for="button in buttons" :key="button.id" target="_blank">
-    <a :href="button.link">{{ button.msg }}</a>
+  <button class="button" v-for="button in buttons" :key="button.id">
+    <a :href="button.link" target="_blank">{{ button.msg }}</a>
   </button>
 </template>
 
