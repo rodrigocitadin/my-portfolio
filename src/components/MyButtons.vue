@@ -1,31 +1,27 @@
 <template>
-  <button class="button align-center" v-for="button in buttons" :key="button.id">
-    <a :href="button.link" :target="button.target">{{ button.msg }}</a>
-  </button>
+  <div class="align-center">
+    <button class="button" v-for="button in buttons" :key="button.id">
+      <a :href="button.link" :target="button.target">{{ button.msg }}</a>
+    </button>
+  </div>
 </template>
 
 <script>
 let buttons = [
   {
     id: 1,
-    msg: 'ABOUT ME',
-    link: '',
-    target: '_self',
-  },
-  {
-    id: 2,
     msg: 'LINKEDIN',
     link: 'https://www.linkedin.com/in/rodrigobcitadin/',
     target: '_blank',
   },
   {
-    id: 3,
+    id: 2,
     msg: 'GITHUB',
     link: 'https://github.com/rodrigocitadin',
     target: '_blank',
   },
   {
-    id: 4,
+    id: 3,
     msg: 'DEV.TO',
     link: 'https://dev.to/rodrigocitadin',
     target: '_blank',

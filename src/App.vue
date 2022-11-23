@@ -1,9 +1,10 @@
 <template >
   <MyHeaderVue v-if="!showAbout" />
-  <div v-if="!showAbout">
-    <MyButtonsVue />
-  </div>
-  <AboutMeVue v-if="showAbout" />
+  <button v-if="!showAbout" @click="showAbout = true" class="button align-center">
+    <a>ABOUT ME</a>
+  </button>
+  <MyButtonsVue v-if="!showAbout" />
+  <AboutMeVue v-else />
 </template>
 
 <script>
@@ -16,7 +17,7 @@ export default {
   components: {
     MyHeaderVue,
     MyButtonsVue,
-    AboutMeVue
+    AboutMeVue,
   },
   data() {
     return {
