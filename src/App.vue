@@ -1,20 +1,28 @@
-<template>
-  <MyHeaderVue />
-  <div class="buttons">
+<template >
+  <MyHeaderVue v-if="!showAbout" />
+  <div v-if="!showAbout">
     <MyButtonsVue />
   </div>
+  <AboutMeVue v-if="showAbout" />
 </template>
 
 <script>
 import MyHeaderVue from './components/MyHeader.vue';
 import MyButtonsVue from './components/MyButtons.vue';
+import AboutMeVue from './components/AboutMe.vue';
 
 export default {
   name: 'App',
   components: {
     MyHeaderVue,
-    MyButtonsVue
-  }
+    MyButtonsVue,
+    AboutMeVue
+  },
+  data() {
+    return {
+      showAbout: false
+    }
+  },
 }
 </script>
 
@@ -27,10 +35,5 @@ html {
   height: 100%;
   width: 100%;
   background: #202020;
-}
-
-.buttons {
-  display: flex;
-  flex-direction: column;
 }
 </style>

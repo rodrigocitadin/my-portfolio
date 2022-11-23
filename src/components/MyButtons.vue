@@ -1,48 +1,59 @@
 <template>
-  <button class="button" v-for="button in buttons" :key="button.id">
-    <a :href="button.link" target="_blank">{{ button.msg }}</a>
+  <button class="button align-center" v-for="button in buttons" :key="button.id">
+    <a :href="button.link" :target="button.target">{{ button.msg }}</a>
   </button>
 </template>
 
 <script>
+let buttons = [
+  {
+    id: 1,
+    msg: 'ABOUT ME',
+    link: '',
+    target: '_self',
+  },
+  {
+    id: 2,
+    msg: 'LINKEDIN',
+    link: 'https://www.linkedin.com/in/rodrigobcitadin/',
+    target: '_blank',
+  },
+  {
+    id: 3,
+    msg: 'GITHUB',
+    link: 'https://github.com/rodrigocitadin',
+    target: '_blank',
+  },
+  {
+    id: 4,
+    msg: 'DEV.TO',
+    link: 'https://dev.to/rodrigocitadin',
+    target: '_blank',
+  }
+]
+
 export default {
   data() {
-    return {
-      buttons: [
-        {
-          id: 1,
-          msg: 'ABOUT ME',
-          link: '',
-        },
-        {
-          id: 2,
-          msg: 'LINKEDIN',
-          link: 'https://www.linkedin.com/in/rodrigobcitadin/',
-          color: '#01649b'
-        },
-        {
-          id: 3,
-          msg: 'GITHUB',
-          link: 'https://github.com/rodrigocitadin',
-        },
-        {
-          id: 4,
-          msg: 'DEV.TO',
-          link: 'https://dev.to/rodrigocitadin',
-        }
-      ]
-    }
+    return { buttons }
   }
 }
 </script>
 
 <style>
+.align-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .button {
   width: 30rem;
   height: 4rem;
   margin: 0.6rem auto;
   border-radius: 12px;
-  background-color: whitesmoke;
+  background-color: transparent;
+  border: 2px solid whitesmoke;
+
   -webkit-transition: all 0.3s 0s ease-in;
   -moz-transition: all 0.3s 0s ease-in;
   -o-transition: all 0.3s 0s ease-in;
@@ -50,11 +61,12 @@ export default {
 }
 
 .button:hover {
-  padding-left: 20px;
-  background-color: rgb(189, 189, 189);
+  padding-left: 1.25rem;
+  background-color: #161616;
 }
 
 .button a {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
+  color: whitesmoke;
 }
 </style>

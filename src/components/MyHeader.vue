@@ -19,24 +19,24 @@ export default {
 .my-pic {
   display: flex;
   justify-content: center;
-  margin: 80px 0 25px 0;
+  margin: 5rem 0 1.5rem 0;
 }
 
 #citadin-pic {
-  width: 230px;
+  width: 14.5rem;
   background-color: whitesmoke;
   border-radius: 100%;
 }
 
 .my-name {
   color: whitesmoke;
-  margin-bottom: 120px;
+  margin-bottom: 7.5rem;
   display: flex;
   justify-content: center;
 }
 
 .name {
-  width: 140px;
+  width: 8.75rem;
   border-right: 3px solid whitesmoke;
   white-space: nowrap;
   overflow: hidden;
@@ -52,7 +52,7 @@ export default {
   }
 
   to {
-    width: 140px;
+    width: 8.75rem;
   }
 }
 
