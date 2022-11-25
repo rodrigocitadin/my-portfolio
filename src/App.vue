@@ -4,7 +4,10 @@
     <a>ABOUT ME</a>
   </button>
   <MyButtonsVue v-if="!showAbout" />
-  <AboutMeVue v-else />
+  <div v-else>
+    <img class="x-icon" src="../src/assets/x-icon.png" @click="showAbout = false" />
+    <AboutMeVue />
+  </div>
 </template>
 
 <script>
@@ -36,5 +39,13 @@ html {
   height: 100%;
   width: 100%;
   background: #202020;
+}
+
+.x-icon {
+  width: 40px;
+  z-index: 1;
+  position: fixed;
+  top: 10px;
+  left: 10px;
 }
 </style>
