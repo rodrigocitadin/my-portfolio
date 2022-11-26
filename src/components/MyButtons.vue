@@ -7,26 +7,7 @@
 </template>
 
 <script>
-let buttons = [
-  {
-    id: 1,
-    msg: 'LINKEDIN',
-    link: 'https://www.linkedin.com/in/rodrigobcitadin/',
-    target: '_blank',
-  },
-  {
-    id: 2,
-    msg: 'GITHUB',
-    link: 'https://github.com/rodrigocitadin',
-    target: '_blank',
-  },
-  {
-    id: 3,
-    msg: 'DEV.TO',
-    link: 'https://dev.to/rodrigocitadin',
-    target: '_blank',
-  }
-]
+let buttons = require('../assets/buttons.json')
 
 export default {
   data() {

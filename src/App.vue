@@ -13,7 +13,7 @@
 <script>
 import MyHeaderVue from './components/MyHeader.vue';
 import MyButtonsVue from './components/MyButtons.vue';
-import AboutMeVue from './components/AboutMe.vue';
+import AboutMeVue from './components/MyAboutMe.vue';
 
 export default {
   name: 'App',
@@ -24,7 +24,7 @@ export default {
   },
   data() {
     return {
-      showAbout: true
+      showAbout: false
     }
   },
 }
