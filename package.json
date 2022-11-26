@@ -1,9 +1,5 @@
 {
-<<<<<<< HEAD
   "name": "citadin",
-=======
-  "name": "citadin-portfolio",
->>>>>>> 8e897262a909040bea4f1c98f2e36b41946699a4
   "version": "1.0.0",
   "private": true,
   "scripts": {
