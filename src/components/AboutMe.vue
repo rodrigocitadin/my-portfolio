@@ -28,62 +28,17 @@
   <div class="skills container align-center">
     <h3 class="titles">Skills <img class="gear rotate-gear" src="../assets/gear.png"></h3>
 
-    <div class="meters align-center">
-      <div class="icons-meters">
-        <label class="labels" for="js"><img src="../assets/icons/javascript-original.svg"
-            class="icons" />Javascript</label>
-        <meter id="js" value="8" min="0" max="10"></meter>
-      </div>
-
-      <div class="icons-meters">
-        <label class="labels" for="ts"><img src="../assets/icons/typescript-original.svg"
-            class="icons" />Typescript</label>
-        <meter id="ts" value="8" min="0" max="10"></meter>
-      </div>
-
-      <div class="icons-meters">
-        <label class="labels" for="vue"><img src="../assets/icons/vuejs-original.svg" class="icons" />VueJS</label>
-        <meter id="vue" value="8" min="0" max="10"></meter>
-      </div>
-
-      <div class="icons-meters">
-        <label class="labels" for="nuxt"><img src="../assets/icons/nuxtjs-original.svg" class="icons" />NuxtJS</label>
-        <meter id="nuxt" value="8" min="0" max="10"></meter>
-      </div>
-
-      <div class="icons-meters">
-        <label class="labels" for="node"><img src="../assets/icons/nodejs-original.svg" class="icons" />NodeJS</label>
-        <meter id="node" value="8" min="0" max="10"></meter>
-      </div>
-
-      <div class="icons-meters">
-        <label class="labels" for="express"><img src="../assets/icons/express-original.svg"
-            class="icons" />ExpressJS</label>
-        <meter id="express" value="8" min="0" max="10"></meter>
-      </div>
-
-      <div class="icons-meters">
-        <label class="labels" for="rust"><img src="../assets/icons/rust-plain.svg" class="icons" />Rust</label>
-        <meter id="rust" value="8" min="0" max="10"></meter>
-      </div>
-
-      <div class="icons-meters">
-        <label class="labels" for="elixir"><img src="../assets/icons/elixir-original.svg" class="icons" />Elixir</label>
-        <meter id="elixir" value="8" min="0" max="10"></meter>
-      </div>
-
-      <div class="icons-meters">
-        <label class="labels" for="psql"><img src="../assets/icons/postgresql-original.svg"
-            class="icons" />PostgreSQL</label>
-        <meter id="psql" value="8" min="0" max="10"></meter>
-      </div>
-    </div>
+    <MySkillsVue />
   </div>
 </template>
 
 <script>
-export default {
+import MySkillsVue from './about_me/MySkills.vue'
 
+export default {
+  components: {
+    MySkillsVue
+  }
 }
 </script>
 
@@ -133,6 +88,7 @@ export default {
   margin: 5px 0;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .meters {
