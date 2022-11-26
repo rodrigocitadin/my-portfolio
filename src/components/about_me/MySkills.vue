@@ -6,7 +6,7 @@
       <label class="labels" :for="skill.id"><img class="icons" :src="skill.icon">
         {{ skill.name }}
       </label>
-      <meter :id="skill.id" :value="skill.value" min="0" max="10" low="8" high="8"></meter>
+      <meter :id="skill.id" :value="skill.value" min="0" max="10" low="1" high="1"></meter>
     </div>
   </div>
 </template>
@@ -59,20 +59,7 @@ meter {
   margin: 0 15px;
   width: 70%;
   align-items: flex-end;
-  background: lightgrey;
   height: 15px;
-}
-
-meter:-moz-meter-optimum::-moz-meter-bar {
-  background: indianred;
-}
-
-meter:-moz-meter-sub-optimum::-moz-meter-bar {
-  background: seagreen;
-}
-
-meter:-moz-meter-sub-sub-optimum::-moz-meter-bar {
-  background: seagreen;
 }
 
 @media (max-width: 750px) {
