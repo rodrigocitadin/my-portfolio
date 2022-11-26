@@ -25,10 +25,4 @@ export default {
   display: flex;
   margin-bottom: 30px;
 }
-
-.container {
-  width: 80%;
-  max-width: 800px;
-  margin: 20px auto;
-}
 </style>

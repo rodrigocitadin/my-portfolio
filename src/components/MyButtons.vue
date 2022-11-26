@@ -17,12 +17,6 @@ export default {
 </script>
 
 <style>
-.align-center {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
 .button {
   width: 30rem;
   height: 4rem;
@@ -45,5 +39,12 @@ export default {
 .button a {
   font-size: 1.4rem;
   color: whitesmoke;
+}
+
+@media (max-width: 600px) {
+  .button {
+    width: 20rem;
+    height: 3.5rem;
+  }
 }
 </style>

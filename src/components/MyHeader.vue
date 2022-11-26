@@ -46,6 +46,16 @@ export default {
   animation: blinkCursor 1s infinite normal, typing 1s steps(7) 0s normal;
 }
 
+@media (max-width: 600px) {
+  #citadin-pic {
+    width: 10.5rem;
+  }
+
+  .my-name {
+    margin-bottom: 4rem;
+  }
+}
+
 @keyframes typing {
   from {
     width: 0;

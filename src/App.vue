@@ -1,8 +1,10 @@
 <template >
   <MyHeaderVue v-if="!showAbout" />
-  <button v-if="!showAbout" @click="showAbout = true" class="button align-center">
-    <a>ABOUT ME</a>
-  </button>
+  <div class="align-center">
+    <button v-if="!showAbout" @click="showAbout = true" class="button">
+      <a id="about-me">ABOUT ME</a>
+    </button>
+  </div>
   <MyButtonsVue v-if="!showAbout" />
   <div v-else>
     <img class="x-icon" src="../src/assets/x-icon.png" @click="showAbout = false" />
@@ -47,5 +49,17 @@ html {
   position: fixed;
   top: 10px;
   left: 10px;
+}
+
+.container {
+  width: 80%;
+  max-width: 800px;
+  margin: 20px auto 60px;
+}
+
+.align-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 </style>

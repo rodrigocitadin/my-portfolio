@@ -28,7 +28,7 @@ export default {
 
 <style>
 .resume {
-  margin: 0 auto 40px;
+  margin: 0 auto;
 }
 
 .resume-text {

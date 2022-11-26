@@ -1,5 +1,5 @@
 <template>
-  <div class="skills container align-center">
+  <div class="container align-center">
     <h3 class="titles">Skills <img class="gear rotate-gear" src="../../assets/gear.png"></h3>
 
     <div v-for="skill in skills" :key="skill.id" class="icons-meters">
@@ -84,6 +84,12 @@ meter:-moz-meter-sub-sub-optimum::-moz-meter-bar {
 @media (max-width: 600px) {
   meter {
     width: 50%;
+  }
+}
+
+@media (max-width: 450px) {
+  meter {
+    width: 36%;
   }
 }
 
