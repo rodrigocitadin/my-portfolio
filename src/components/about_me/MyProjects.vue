@@ -16,7 +16,7 @@
 </template>
 
 <script>
-let projects = require('../../assets/projects.json');
+let projects = require('@/assets/jsons/projects.json');
 
 export default {
   data() {

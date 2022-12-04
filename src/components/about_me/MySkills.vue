@@ -1,6 +1,6 @@
 <template>
   <div class="container align-center">
-    <h3 class="titles">Skills <img class="gear rotate-gear" src="../../assets/gear.png"></h3>
+    <h3 class="titles">Skills <img class="gear rotate-gear" src="@/assets/images/gear.png"></h3>
 
     <div v-for="skill in skills" :key="skill.id" class="icons-meters">
       <label class="labels" :for="skill.id"><img class="icons" :src="skill.icon">
@@ -12,7 +12,7 @@
 </template>
 
 <script>
-let skills = require('../../assets/skills.json')
+let skills = require('@/assets/jsons/skills.json')
 
 export default {
   data() { return { skills } }

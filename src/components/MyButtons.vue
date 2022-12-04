@@ -1,7 +1,6 @@
 <template>
   <div class="align-center">
-
-    <button class="button">ABOUT ME</button>
+    <button class="button" @click="onClickShowAbout()">ABOUT ME</button>
     <a class="button" v-for="button in buttons" :key="button.id" :href="button.link" :target="button.target">
       {{ button.msg }}
     </a>
@@ -9,11 +8,16 @@
 </template>
 
 <script>
-let buttons = require('../assets/buttons.json')
+let buttons = require('@/assets/jsons/buttons.json')
 
 export default {
   data() {
     return { buttons }
+  },
+  methods: {
+    onClickShowAbout() {
+      this.$emit('show');
+    }
   }
 }
 </script>

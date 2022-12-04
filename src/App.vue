@@ -1,21 +1,13 @@
 <template >
   <MyHeaderVue v-if="!showAbout" />
-  <div class="align-center">
-    <button v-if="!showAbout" @click="showAbout = true" class="button">
-      <a id="about-me">ABOUT ME</a>
-    </button>
-  </div>
-  <MyButtonsVue v-if="!showAbout" />
-  <div v-else>
-    <img class="x-icon" src="../src/assets/x-icon.png" @click="showAbout = false" />
-    <AboutMeVue />
-  </div>
+  <MyButtonsVue v-if="!showAbout" @show="onClickShowAbout()" />
+  <AboutMeVue v-else @show="onClickShowAbout()" />
 </template>
 
 <script>
-import MyHeaderVue from './components/MyHeader.vue';
-import MyButtonsVue from './components/MyButtons.vue';
-import AboutMeVue from './components/MyAboutMe.vue';
+import MyHeaderVue from '@/components/MyHeader.vue';
+import MyButtonsVue from '@/components/MyButtons.vue';
+import AboutMeVue from '@/components/MyAboutMe.vue';
 
 export default {
   name: 'App',
@@ -29,6 +21,11 @@ export default {
       showAbout: false
     }
   },
+  methods: {
+    onClickShowAbout() {
+      this.showAbout = !this.showAbout
+    }
+  }
 }
 </script>
 
@@ -41,14 +38,6 @@ html {
   height: 100%;
   width: 100%;
   background: #202020;
-}
-
-.x-icon {
-  width: 40px;
-  z-index: 1;
-  position: fixed;
-  top: 10px;
-  left: 10px;
 }
 
 .container {

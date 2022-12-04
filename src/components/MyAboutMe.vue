@@ -1,8 +1,5 @@
 <template>
-  <div>
-    <img class="x-icon" src="@/assets/x-icon.png" @click="showAbout = false" />
-    <AboutMeVue />
-  </div>
+  <img class="x-icon" src="@/assets/images/x-icon.png" @click="onClickShowAbout()" />
   <MyHeaderAboutVue />
   <MyResumeVue />
   <MySkillsVue />
@@ -10,10 +7,10 @@
 </template>
 
 <script>
-import MyResumeVue from './about_me/MyResume.vue';
-import MySkillsVue from './about_me/MySkills.vue';
-import MyHeaderAboutVue from './about_me/MyHeaderAbout.vue';
-import MyProjectsVue from './about_me/MyProjects.vue';
+import MyResumeVue from '@/components/about_me/MyResume.vue';
+import MySkillsVue from '@/components/about_me/MySkills.vue';
+import MyHeaderAboutVue from '@/components/about_me/MyHeaderAbout.vue';
+import MyProjectsVue from '@/components/about_me/MyProjects.vue';
 
 export default {
   components: {
@@ -21,17 +18,24 @@ export default {
     MyResumeVue,
     MyHeaderAboutVue,
     MyProjectsVue
+  },
+  methods: {
+    onClickShowAbout() {
+      this.$emit('show');
+    }
   }
 }
 </script>
 
 <style>
 .x-icon {
+  border-radius: 100%;
   width: 40px;
   z-index: 1;
   position: fixed;
   top: 10px;
   left: 10px;
+  cursor: pointer;
 }
 
 .titles {
