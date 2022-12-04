@@ -1,4 +1,8 @@
 <template>
+  <div>
+    <img class="x-icon" src="@/assets/x-icon.png" @click="showAbout = false" />
+    <AboutMeVue />
+  </div>
   <MyHeaderAboutVue />
   <MyResumeVue />
   <MySkillsVue />
@@ -22,6 +26,14 @@ export default {
 </script>
 
 <style>
+.x-icon {
+  width: 40px;
+  z-index: 1;
+  position: fixed;
+  top: 10px;
+  left: 10px;
+}
+
 .titles {
   color: #b6b6b6;
   font-size: 1.4em;

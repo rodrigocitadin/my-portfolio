@@ -1,8 +1,10 @@
 <template>
   <div class="align-center">
-    <button class="button" v-for="button in buttons" :key="button.id">
-      <a :href="button.link" :target="button.target">{{ button.msg }}</a>
-    </button>
+
+    <button class="button">ABOUT ME</button>
+    <a class="button" v-for="button in buttons" :key="button.id" :href="button.link" :target="button.target">
+      {{ button.msg }}
+    </a>
   </div>
 </template>
 
@@ -23,7 +25,10 @@ export default {
   margin: 0.6rem auto;
   border-radius: 12px;
   background-color: transparent;
-  border: 2px solid whitesmoke;
+  border: 1px solid whitesmoke;
+  font-size: 1.4rem;
+  color: whitesmoke;
+  cursor: pointer;
 
   -webkit-transition: all 0.3s 0s ease-in;
   -moz-transition: all 0.3s 0s ease-in;
@@ -36,9 +41,10 @@ export default {
   background-color: #161616;
 }
 
-.button a {
-  font-size: 1.4rem;
-  color: whitesmoke;
+a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 @media (max-width: 600px) {
