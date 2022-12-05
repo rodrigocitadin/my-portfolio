@@ -24,8 +24,8 @@ export default {
 
 .citadin-pic {
   width: 14.5rem;
-  background-color: whitesmoke;
   border-radius: 100%;
+
 }
 
 .my-name {
