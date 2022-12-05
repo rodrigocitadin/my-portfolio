@@ -1,23 +1,23 @@
 <template>
   <img class="x-icon" src="@/assets/images/x-icon.png" @click="onClickShowAbout()" />
-  <MyHeaderAboutVue />
-  <MyResumeVue />
-  <MySkillsVue />
-  <MyProjectsVue />
+  <HeaderComp />
+  <ResumeComp />
+  <SkillsComp />
+  <ProjectsComp />
 </template>
 
 <script>
-import MyResumeVue from '@/components/about_me/MyResume.vue';
-import MySkillsVue from '@/components/about_me/MySkills.vue';
-import MyHeaderAboutVue from '@/components/about_me/MyHeaderAbout.vue';
-import MyProjectsVue from '@/components/about_me/MyProjects.vue';
+import ResumeComp from '@/components/about_me/ResumeComp.vue';
+import SkillsComp from '@/components/about_me/SkillsComp.vue';
+import HeaderComp from '@/components/HeaderComp.vue';
+import ProjectsComp from '@/components/about_me/ProjectsComp.vue';
 
 export default {
   components: {
-    MySkillsVue,
-    MyResumeVue,
-    MyHeaderAboutVue,
-    MyProjectsVue
+    SkillsComp,
+    ResumeComp,
+    HeaderComp,
+    ProjectsComp
   },
   methods: {
     onClickShowAbout() {

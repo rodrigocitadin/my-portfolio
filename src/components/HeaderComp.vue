@@ -1,12 +1,13 @@
 <template>
-  <header class="header">
+  <div class="container">
     <div class="my-pic">
-      <img src="@/assets/images/my-picture.png" alt="Citadin's picture" id="citadin-pic">
+      <img class="citadin-pic" src="@/assets/images/my-picture.png" alt="Citadin's picture">
     </div>
     <div class="my-name">
       <h1 class="name animation-typing">Citadin</h1>
+      <h2 class="subtitle">Fullstack Developer</h2>
     </div>
-  </header>
+  </div>
 </template>
 
 <script>
@@ -17,26 +18,26 @@ export default {
 
 <style>
 .my-pic {
-  display: flex;
-  justify-content: center;
-  margin: 5rem 0 1.5rem 0;
+  text-align: center;
+  margin: 2.5rem auto 0;
 }
 
-#citadin-pic {
+.citadin-pic {
   width: 14.5rem;
   background-color: whitesmoke;
   border-radius: 100%;
 }
 
 .my-name {
-  color: whitesmoke;
-  margin-bottom: 7.5rem;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color: whitesmoke;
 }
 
 .name {
   width: 8.75rem;
+  height: 36px;
   border-right: 3px solid whitesmoke;
   white-space: nowrap;
   overflow: hidden;
@@ -44,6 +45,10 @@ export default {
 
 .animation-typing {
   animation: blinkCursor 1s infinite normal, typing 1s steps(7) 0s normal;
+}
+
+.subtitle {
+  margin: 0.1rem 0 60px;
 }
 
 @media (max-width: 600px) {
@@ -62,7 +67,7 @@ export default {
   }
 
   to {
-    width: 8.75rem;
+    width: 8.6rem;
   }
 }
 

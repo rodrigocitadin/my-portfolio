@@ -1,20 +1,20 @@
 <template >
-  <MyHeaderVue v-if="!showAbout" />
-  <MyButtonsVue v-if="!showAbout" @show="onClickShowAbout()" />
-  <AboutMeVue v-else @show="onClickShowAbout()" />
+  <HeaderComp v-if="!showAbout" />
+  <ButtonsComp v-if="!showAbout" @show="onClickShowAbout()" />
+  <AboutMeComp v-else @show="onClickShowAbout()" />
 </template>
 
 <script>
-import MyHeaderVue from '@/components/MyHeader.vue';
-import MyButtonsVue from '@/components/MyButtons.vue';
-import AboutMeVue from '@/components/MyAboutMe.vue';
+import HeaderComp from '@/components/HeaderComp.vue';
+import ButtonsComp from '@/components/ButtonsComp.vue';
+import AboutMeComp from '@/components/AboutMeComp.vue';
 
 export default {
   name: 'App',
   components: {
-    MyHeaderVue,
-    MyButtonsVue,
-    AboutMeVue,
+    HeaderComp,
+    ButtonsComp,
+    AboutMeComp,
   },
   data() {
     return {
