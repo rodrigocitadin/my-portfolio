@@ -12,7 +12,7 @@
 
 <script>
 export default {
-
+  name: 'HeaderComp'
 }
 </script>
 
@@ -38,6 +38,7 @@ export default {
 .name {
   width: 8.75rem;
   height: 36px;
+  margin: 2rem 0 1rem;
   border-right: 3px solid whitesmoke;
   white-space: nowrap;
   overflow: hidden;
@@ -48,16 +49,20 @@ export default {
 }
 
 .subtitle {
-  margin: 0.1rem 0 60px;
+  margin: 0.1rem 0 4rem;
 }
 
 @media (max-width: 600px) {
-  #citadin-pic {
+  .citadin-pic {
     width: 10.5rem;
   }
 
   .my-name {
     margin-bottom: 4rem;
+  }
+
+  .subtitle {
+    margin: 0.1rem 0 1rem;
   }
 }
 

@@ -11,6 +11,7 @@
 let buttons = require('@/assets/jsons/buttons.json')
 
 export default {
+  name: 'ButtonsComp',
   data() {
     return { buttons }
   },

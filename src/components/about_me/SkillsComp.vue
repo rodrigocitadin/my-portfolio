@@ -1,5 +1,5 @@
 <template>
-  <div class="container align-center">
+  <div class="container align-center skills">
     <h3 class="titles">Skills <img class="gear rotate-gear" src="@/assets/images/gear.png"></h3>
 
     <div v-for="skill in skills" :key="skill.id" class="icons-meters">
@@ -20,6 +20,10 @@ export default {
 </script>
 
 <style>
+.skills {
+  margin-bottom: 100px !important;
+}
+
 .gear {
   width: 30px;
   opacity: 70%;

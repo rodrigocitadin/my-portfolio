@@ -3,21 +3,22 @@
   <HeaderComp />
   <ResumeComp />
   <SkillsComp />
-  <ProjectsComp />
+  <!-- <ProjectsComp /> -->
 </template>
 
 <script>
 import ResumeComp from '@/components/about_me/ResumeComp.vue';
 import SkillsComp from '@/components/about_me/SkillsComp.vue';
 import HeaderComp from '@/components/HeaderComp.vue';
-import ProjectsComp from '@/components/about_me/ProjectsComp.vue';
+// import ProjectsComp from '@/components/about_me/ProjectsComp.vue';
 
 export default {
+  name: 'AboutMeComp',
   components: {
     SkillsComp,
     ResumeComp,
     HeaderComp,
-    ProjectsComp
+    // ProjectsComp
   },
   methods: {
     onClickShowAbout() {
