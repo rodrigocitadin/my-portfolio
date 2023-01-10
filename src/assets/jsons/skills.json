@@ -2,37 +2,37 @@
   {
     "id": "js",
     "name": "Javascript",
-    "value": "9",
+    "value": "9.5",
     "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
   },
   {
     "id": "ts",
     "name": "Typescript",
-    "value": "6",
+    "value": "9",
     "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
   },
   {
     "id": "vue",
     "name": "VueJS",
-    "value": "8",
+    "value": "7.5",
     "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg"
   },
   {
     "id": "node",
     "name": "NodeJS",
-    "value": "7",
+    "value": "8.5",
     "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
   },
   {
-    "id": "elixir",
-    "name": "Elixir",
-    "value": "10",
-    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/elixir/elixir-original.svg"
+    "id": "rust",
+    "name": "Rust",
+    "value": "7.5",
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rust/rust-plain.svg"
   },
   {
     "id": "psql",
     "name": "PostgreSQL",
-    "value": "6",
+    "value": "7",
     "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"
   }
 ]

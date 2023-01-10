@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <div class="my-pic">
-      <img class="citadin-pic" src="@/assets/images/my-picture.png" alt="Citadin's picture">
+      <img class="citadin-pic" src="@/assets/images/my-picture.jpg" alt="Citadin's picture">
     </div>
     <div class="my-name">
       <h1 class="name animation-typing">Citadin</h1>

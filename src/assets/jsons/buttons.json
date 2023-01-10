@@ -10,11 +10,5 @@
     "msg": "GITHUB",
     "link": "https://github.com/rodrigocitadin",
     "target": "_blank"
-  },
-  {
-    "id": 3,
-    "msg": "DEV.TO",
-    "link": "https://dev.to/rodrigocitadin",
-    "target": "_blank"
   }
 ]
